@@ -33,7 +33,7 @@ $ php artisan queue:work --tries=3
 Tests
 -----
 
-Execute these commands to run tests (you must run acceptance tests with the server running):
+Create mysql TEST database and setup the .env.testing file. Execute these commands to run tests (you must run acceptance tests with the server running):
 
 ```bash
 $ cd Task-Downloader/
