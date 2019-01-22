@@ -23,7 +23,7 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#" class="navbar-item">Home</a>
+            <a href="/" class="navbar-item">Home</a>
             <a href="/tasks" class="navbar-item">Tasks List</a>
             <a href="/tasks/add" class="navbar-item">Add New Task</a>
           </div>
