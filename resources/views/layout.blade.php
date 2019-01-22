@@ -9,35 +9,40 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            Downloader Application
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-
-            <a class="navbar-item" href="/tasks">
-                Tasks List
-            </a>
-
-            <a class="navbar-item" href="/tasks/add">
-                Add New Task
-            </a>
-
+<nav class="navbar is-primary">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#" style="font-weight:bold;">
+            Tasks Downloader Application
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-    </div>
-</nav>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#" class="navbar-item">Home</a>
+            <a href="/tasks" class="navbar-item">Tasks List</a>
+            <a href="/tasks/add" class="navbar-item">Add New Task</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
 
-<div class="container">
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+
+<div class="container" style="padding: 15px;">
 
 @yield('content')
 
