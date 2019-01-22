@@ -43,22 +43,27 @@ Quick notes:
 ------------
 
 1. List tasks
--------------
 
 web: http://127.0.0.1:8000/tasks
+
 api: curl http://127.0.0.1:8000/api/tasks
+
 console: php artisan tasks:list
 
 2. Add new task
----------------
+
 web: http://127.0.0.1:8000/tasks/add
+
 api: curl -i -d "url=http://www.iconarchive.com/download/i86432/martin-berube/flat-animal/kitten.ico" -X POST http://127.0.0.1:8000/api/tasks
+
 console: php artisan task:add http://www.iconarchive.com/download/i86432/martin-berube/flat-animal/kitten.ico
 
 3. Download task
-----------------
+
 web: http://127.0.0.1:8000/tasks/37/download
+
 api: curl http://127.0.0.1:8000/api/tasks/37/download > somedoc.txt
+
 console: php artisan task:download 37 > somedoc.txt
 
 
