@@ -17,6 +17,8 @@ $ cd Task-Downloader/
 $ composer install
 ```
 
+Create mysql database and add the database settings to .env file.
+
 Usage
 -----
 
