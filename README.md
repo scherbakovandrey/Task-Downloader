@@ -15,6 +15,7 @@ Execute these commands to install the project:
 ```bash
 $ cd Task-Downloader/
 $ composer install
+$ php artisan migrate
 ```
 
 Create mysql database and add the database settings to .env file.
@@ -56,9 +57,9 @@ console: php artisan tasks:list
 
 web: http://127.0.0.1:8000/tasks/add
 
-api: curl -i -d "url=http://www.iconarchive.com/download/i86432/martin-berube/flat-animal/kitten.ico" -X POST http://127.0.0.1:8000/api/tasks
+api: curl -i -d "url=http://phpsec.org/images/phpsc-logo.gif" -X POST http://127.0.0.1:8000/api/tasks
 
-console: php artisan task:add http://www.iconarchive.com/download/i86432/martin-berube/flat-animal/kitten.ico
+console: php artisan task:add http://phpsec.org/images/phpsc-logo.gif
 
 3. Download task
 
